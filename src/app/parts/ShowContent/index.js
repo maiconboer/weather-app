@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWind, faTint, faThermometerHalf, faTemperatureLow, faCompass } from '@fortawesome/free-solid-svg-icons'
+import { faWind, faTint, faThermometerHalf, faCompass } from '@fortawesome/free-solid-svg-icons'
 
 import './index.css'
 
