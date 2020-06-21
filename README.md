@@ -10,7 +10,7 @@ A aplicação consome duas API's da [Open Weather Map](https://openweathermap.or
 
 **<p align=center> DESKTOP </p>**
 <p align=center>  
-<img src=".github/image0.png" width="420"/> <img src=".github/image1.png" width="420"/>
+<img src=".github/image0.png" width="400"/> <img src=".github/image1.png" width="400"/>
 </p>
 
 <p align=center> 
