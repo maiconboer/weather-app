@@ -29,15 +29,16 @@ div.about-city-secondary {
     border-radius: 8px;
 }
 
+div.about-city-main div h2 {
+    font-size: 48px;
+}
+
 div.about-city-secondary {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-div.about-city-secondary div p {
-    margin-bottom: 10px;
-}
 
 div.about-city-main div,
 div.about-city-secondary div {
@@ -48,8 +49,12 @@ div.about-city-secondary div {
     padding: 20px;
 }
 
-div.about-city-main div h2 {
-    font-size: 48px;
+div.about-city-secondary div p {
+    margin-bottom: 20px;
+}
+
+div.about-city-secondary div:first-child {
+    margin-top: 10px;
 }
 
 div.next-days {
