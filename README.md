@@ -9,21 +9,13 @@ A aplicação consome duas API's da [Open Weather Map](https://openweathermap.or
 --------------------------------------------------------------
 
 **<p align=center> DESKTOP </p>**
-<p align=center>
-<img src=".github/image0.png" width="420"/>
-<img src=".github/image1.png" width="420"/>
-</p>
- 
-<p align=center>
-<img src=".github/image2.png" width="420"/>
-<img src=".github/image5.png" width="420"/>
-</p>
- 
+<img src=".github/image0.png" width="420"/> <img src=".github/image1.png" width="420"/>
+<img src=".github/image2.png" width="420"/> <img src=".github/image5.png" width="420"/>
+
 **<p align=center> MOBILE </p>**
-<p align=center>
-<img src=".github/image3.png" width="420"/>
-<img src=".github/image4.png" width="420"/>
-</p>
+<img src=".github/image3.png" width="420"/> <img src=".github/image4.png" width="420"/>
+
+
 
 --------------------------------------------------------------
 
