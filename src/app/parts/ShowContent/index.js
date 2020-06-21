@@ -4,8 +4,8 @@ import { faWind, faTint, faThermometerHalf, faCompass } from '@fortawesome/free-
 
 import './index.css'
 
-import {convertTimestamp} from '../../utils/utils'
 import DivNextDays from '../../components/DivNextDays'
+import {convertTimestamp} from '../../utils/utils'
 
 const ShowContent = (props) => {
     
@@ -36,8 +36,13 @@ const ShowContent = (props) => {
         let dateFormated = convertTimestamp(data.date)
         data.date = dateFormated
 
-        arrayForecast = props.forecastData  
+        arrayForecast = props.forecastData    
     } 
+
+    let icons = [faThermometerHalf, faThermometerHalf, faTint, faWind, faCompass, faCompass]               
+    let titles = ['temperatura máxima', 'temperatura mínima', 'humidade', 'velocidade do vento', 'latitude', 'longitude']
+    let informations = [data.temperature, data.temperature_min, data.humidity, data.speed, data.latitude, data.longitude]
+    let symbols = ['°C ↑', '°C ↓', '%', '~', '', '']
 
     return (
         <>
@@ -46,17 +51,13 @@ const ShowContent = (props) => {
                     <div className="about-city-main">
 
                         <div>
-                            <h2>{data.name}, <span>{data.country}</span></h2>
-                            
+                            <h2>{data.name}, <span>{data.country}</span></h2> 
                             <p>{data.date}</p>
                         </div>
 
                         <div>
-                            
                             <img 
-                                src={`http://openweathermap.org/img/wn/${data.icon}@2x.png`} alt="" 
-                            /> 
-
+                                src={`http://openweathermap.org/img/wn/${data.icon}@2x.png`} alt="" /> 
                             <h2>
                                 <FontAwesomeIcon icon={faThermometerHalf}
                                 title='temperatura atual'/>
@@ -64,48 +65,20 @@ const ShowContent = (props) => {
                             </h2>
                             <p>{data.description}</p>
                         </div>
-
                     </div>
                     
                     <div className="about-city-secondary">
-                    
                         <div>
-                            <p>
-                                <FontAwesomeIcon icon={faThermometerHalf}
-                                title='temperatura máxima'/>
-                                 {data.temperature_max}°C
-                            </p>    
-                            <p>
-                                <FontAwesomeIcon icon={faThermometerHalf}
-                                title='temperatura mínima'/>
-                                {data.temperature_min}°C
-                            </p>
-                        </div>
 
-                        <div>
-                            <p>
-                                <FontAwesomeIcon icon={faTint}
-                                title='humidade'/>
-                                {data.humidity}%
-                            </p>
-                            <p>
-                                <FontAwesomeIcon icon={faWind}
-                                title='velocidade do vento'/> 
-                                {data.speed}Km/h
-                            </p>
-                        </div>
-
-                        <div>
-                            <p>
-                                <FontAwesomeIcon icon={faCompass} title='latitude'/> 
-                                {data.latitude}
-                            </p>
-
-                            <p>
-                                <FontAwesomeIcon icon={faCompass}
-                                title='longitude'/> 
-                                {data.longitude}
-                            </p>
+                            {informations.map((infomation, index) => {
+                                return (
+                                    <p key={titles[index]}>
+                                    <FontAwesomeIcon icon={icons[index]}
+                                    title={titles[index]}/>
+                                    {informations[index]}{symbols[index]}
+                                    </p>    
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
@@ -115,12 +88,12 @@ const ShowContent = (props) => {
                     
                     {arrayForecast.map(forecast => {
                         return <DivNextDays 
-                            key={forecast.dt} 
-                            day={forecast.dt_txt} 
-                            icon={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`}
-                            temp_max={forecast.main.temp_max.toFixed(0)} 
-                            description={forecast.weather[0].description} 
-                            />
+                                    key={forecast.dt} 
+                                    day={forecast.dt_txt} 
+                                    icon={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`}
+                                    temp_max={forecast.main.temp_max.toFixed(0)} 
+                                    description={forecast.weather[0].description} 
+                               />
                     })}
                 </div>
             </section>

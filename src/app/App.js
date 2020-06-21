@@ -22,9 +22,7 @@ const App = () => {
 
             let response = await getDataCity(value)
             let responseForecast = await getForecastNextDays(value)   
-            
-            
-            
+             
             if (response.name) {
                 setFound(1)
                 setAllData(response);
@@ -53,7 +51,6 @@ const App = () => {
                     onKeyPress={(e) => handleSearchCity(e)}
                     placeholder='Cidade...'
                 />
-
             </div>
 
             { found === 0
