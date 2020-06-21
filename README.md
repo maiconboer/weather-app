@@ -14,12 +14,12 @@ A aplicação consome duas API's da [Open Weather Map](https://openweathermap.or
 </p>
 
 <p align=center> 
-<img src=".github/image2.png" width="420"/> <img src=".github/image5.png" width="420"/>
+<img src=".github/image2.png" width="400"/> <img src=".github/image5.png" width="400"/>
 
 
 **<p align=center> MOBILE </p>**
 <p align=center>
-<img src=".github/image3.png" width="420"/> <img src=".github/image4.png" width="420"/>
+<img src=".github/image3.png" width="400"/> <img src=".github/image4.png" width="400"/>
 </p>
 
 
