@@ -1,0 +1,82 @@
+section.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.wrapper svg {
+    margin: 0px 4px;
+}
+
+section.wrapper h3 {
+    text-align: center;
+    color: var(--color3)
+}
+
+div.current-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+div.about-city-main,
+div.about-city-secondary {
+    display: flex;
+    flex-direction: column;
+    color: var(--color3);
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 8px;
+}
+
+div.about-city-secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.about-city-secondary div p {
+    margin-bottom: 10px;
+}
+
+div.about-city-main div,
+div.about-city-secondary div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+div.about-city-main div h2 {
+    font-size: 48px;
+}
+
+div.next-days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+@media screen and (max-width: 870px) {
+    div.about-city-main div h2 {
+        font-size: 36px;
+    }
+
+    div.next-days {
+        grid-template-columns: 1fr
+    }
+}
+
+@media screen and (max-width: 620px) {
+    div.about-city-main div h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.current-data {
+        grid-template-columns: 1fr;
+    }
+}

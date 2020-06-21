@@ -1,0 +1,15 @@
+.inputCity {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}    
+
+.inputCity input {
+    max-width: 400px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
