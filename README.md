@@ -27,7 +27,7 @@ A aplicação consome duas API's da [Open Weather Map](https://openweathermap.or
 
 --------------------------------------------------------------
 
-## 👷 Instalação
+## 🔧 Instalação
 
 Para clonar o projeto via HTTPS, execute este comando:
 
@@ -47,12 +47,28 @@ Para iniciar a aplicação, rode o comando:
 
     npm start
 
-Referente as demais configurações, para efeito de testes de quem desejar baixar o repositório:
+Referente as demais configurações, para efeito de testes, de quem desejar baixar o repositório:
 
-É necessário criar um cadastro na [Open Weather Map](https://openweathermap.org/) e para gerar uma API KEY, porém deixei o projeto já configurado com as KEYS que criei, é interessante se cadastrar lá, gerar a própria API KEY.
+É necessário criar um cadastro na [Open Weather Map](https://openweathermap.org/) para gerar uma API KEY, porém deixei o projeto já configurado com as KEYS que criei, é interessante se cadastrar lá, gerar a própria API KEY.
+
+    API KEY gratuita com limite de 60 requisições/minuto e 1.000,000 requisições/mês
 
 - Link para se cadastrar:
 - https://home.openweathermap.org/users/sign_up
 
 - Link para gerar API KEY (depois de ter se cadastrado e confirmado em seu e-mail):
 - https://home.openweathermap.org/api_keys
+
+
+## 👷 Substituindo a API KEY que deixei no projeto pela gerada por ti:
+
+Vá até o arquivo **api.js** o mesmo está dentro da pasta **src/app/services**
+
+**src/app/services/api.js**
+
+Imagem mostrando os locais onde as API KEY estão, substitua estas pela gerada por ti.
+
+<p align=center>
+<img src=".github/api.png" width="420"/>
+</>
+
