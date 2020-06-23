@@ -1,7 +1,7 @@
 div.not-found {
-    max-width: 1000px;
-    width: 100%;
-    margin: 40px auto;
-    text-align: center;
-    color: var(--color3)
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  color: var(--color3)
 }

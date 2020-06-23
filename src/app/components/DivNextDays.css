@@ -1,22 +1,22 @@
 div.forecast {
-    min-width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--color3);
-    background-color: rgba(255,255,255, 0.1);
-    border-radius: 8px;
-    padding: 20px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color3);
+  background-color: rgba(255,255,255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
 }
 
 div.forecast p {
-    text-align: center;
-    font-weight: bold;
-    color: var(--color6);
+  text-align: center;
+  font-weight: bold;
+  color: var(--color6);
 }
 
 @media screen and (max-width: 870px) {
-    div.forecast p {
-        color: var(--color3);
-    }
+  div.forecast p {
+      color: var(--color3);
+  }
 }
