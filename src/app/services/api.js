@@ -4,9 +4,11 @@ export async function getDataCity(value) {
   let result = {}
   
   try {
-    await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=${process.env.REACT_APP_API_KEY1}&lang=pt_br`)
+    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=${process.env.REACT_APP_API_KEY1}&lang=pt_br`)
     .then(response => {
       result = response.data;
+
+      console.log(process.env.REACT_APP_API_KEY1)
   })
   } catch (error) {
       console.log(error);
